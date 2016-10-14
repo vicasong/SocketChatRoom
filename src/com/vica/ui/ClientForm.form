@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.vica.ui.ClientForm">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="604" height="404"/>
+    </constraints>
+    <properties>
+      <maximumSize width="604" height="404"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="db44e" binding="main" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <maximumSize width="600" height="400"/>
+          <minimumSize width="600" height="400"/>
+          <preferredSize width="600" height="400"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+        <border type="line">
+          <color color="-16729180"/>
+        </border>
+        <children>
+          <grid id="bdb13" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="0"/>
+            <constraints border-constraint="West"/>
+            <properties>
+              <background color="-12565691"/>
+              <foreground color="-4605511"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="51d8d" class="javax.swing.JButton" binding="btn_start">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12763070"/>
+                  <foreground color="-4539718"/>
+                  <text value="连接"/>
+                </properties>
+              </component>
+              <component id="acce3" class="javax.swing.JTextField" binding="txt_host">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12104884"/>
+                  <caretColor color="-4079167"/>
+                  <disabledTextColor color="-6184543"/>
+                  <foreground color="-4671304"/>
+                  <selectedTextColor color="-4671304"/>
+                  <selectionColor color="-11832910"/>
+                  <text value="127.0.0.1"/>
+                </properties>
+              </component>
+              <component id="2e5f6" class="javax.swing.JTextField" binding="txt_port">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12104884"/>
+                  <caretColor color="-4079167"/>
+                  <disabledTextColor color="-6184543"/>
+                  <foreground color="-4671304"/>
+                  <selectedTextColor color="-4671304"/>
+                  <selectionColor color="-11832910"/>
+                  <text value="3355"/>
+                </properties>
+              </component>
+              <component id="4d80a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565691"/>
+                  <foreground color="-4539718"/>
+                  <text value="端口"/>
+                </properties>
+              </component>
+              <component id="95797" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565691"/>
+                  <foreground color="-4539718"/>
+                  <text value="主机"/>
+                </properties>
+              </component>
+              <component id="8ce4c" class="javax.swing.JButton" binding="btn_stop">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12763070"/>
+                  <foreground color="-4539718"/>
+                  <text value="断开"/>
+                </properties>
+              </component>
+              <grid id="94e88" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12565691"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b31fe" class="javax.swing.JList" binding="ls_user">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-12631484"/>
+                      <foreground color="-4605511"/>
+                      <model>
+                        <item value="All(*)"/>
+                      </model>
+                      <selectionBackground color="-11965269"/>
+                      <selectionForeground color="-4605511"/>
+                    </properties>
+                  </component>
+                  <component id="34749" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12565691"/>
+                      <foreground color="-4539718"/>
+                      <text value="用户"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="11aac" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="2"/>
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-12565691"/>
+              <foreground color="-4605511"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c4b2" class="javax.swing.JTextArea" binding="txt_panel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-11907505"/>
+                  <caretColor color="-4605511"/>
+                  <disabledTextColor color="-4539718"/>
+                  <editable value="false"/>
+                  <foreground color="-4671304"/>
+                  <selectedTextColor color="-4473925"/>
+                  <selectionColor color="-4605511"/>
+                </properties>
+              </component>
+              <grid id="e2357" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12631227"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3e202" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12565691"/>
+                      <foreground color="-4539718"/>
+                      <text value="信息"/>
+                    </properties>
+                  </component>
+                  <component id="6ffe4" class="javax.swing.JTextField" binding="txt_msg">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-12236470"/>
+                      <caretColor color="-4605511"/>
+                      <disabledTextColor color="-4539718"/>
+                      <foreground color="-4671304"/>
+                      <selectedTextColor color="-4473925"/>
+                      <selectionColor color="-4605511"/>
+                    </properties>
+                  </component>
+                  <component id="6db02" class="javax.swing.JButton" binding="btn_send">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12631484"/>
+                      <foreground color="-4605511"/>
+                      <text value="发送"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
